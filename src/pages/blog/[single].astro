@@ -56,24 +56,30 @@ const monthYear = (d: Date | undefined) =>
       </div>
     </section>
 
-    <section>
-      <div class="wrap">
-        <div class="sechead">
-          <span class="label">Keep reading</span><h2>More posts.</h2>
-        </div>
-        {
-          more.map((p) => (
-            <a class="post" href={`/blog/${p.id}`}>
-              <div class="meta" set:html={`${monthYear(p.data.date)}<br>${p.data.categories?.[0] ?? ""}`} />
-              <div>
-                <h4>{p.data.title}</h4>
-                <p>{p.data.description}</p>
-              </div>
-            </a>
-          ))
-        }
-      </div>
-    </section>
+    {
+      more.length > 0 && (
+        <section>
+          <div class="wrap">
+            <div class="sechead">
+              <span class="label">Keep reading</span>
+              <h2>More posts.</h2>
+            </div>
+            {more.map((p) => (
+              <a class="post" href={`/blog/${p.id}`}>
+                <div
+                  class="meta"
+                  set:html={`${monthYear(p.data.date)}<br>${p.data.categories?.[0] ?? ""}`}
+                />
+                <div>
+                  <h4>{p.data.title}</h4>
+                  <p>{p.data.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
 
     <section>
       <div class="wrap">
