@@ -24,15 +24,6 @@ draft: false
   </div>
 </div></section>
 <section><div class="wrap">
-  <div class="sechead"><span class="label">What we believe</span><h2>Four simple rules.</h2></div>
-  <div class="grid g4">
-    <div class="card hoverable"><span class="snum">V/01</span><h4>Plain words</h4><p>If you need a dictionary to read our email, we wrote it wrong. We explain things the way we would explain them to a friend.</p></div>
-    <div class="card hoverable"><span class="snum">V/02</span><h4>Fixed prices</h4><p>You know the price before we touch anything. No surprise invoice at the end of the month.</p></div>
-    <div class="card hoverable"><span class="snum">V/03</span><h4>You own it</h4><p>It is your account and your data. We never hold your business hostage. Leave any time and take everything.</p></div>
-    <div class="card hoverable"><span class="snum">V/04</span><h4>We say no</h4><p>If we are not the right fit, we tell you on the first call. A bad project helps nobody.</p></div>
-  </div>
-</div></section>
-<section><div class="wrap">
   <div class="sechead">
     <span class="label">Who is behind this</span>
     <h2>The people behind<br>GHL Megaminds.</h2>
@@ -54,6 +45,15 @@ draft: false
       <h3>Somrat Sorkar</h3><p class="role">Senior Software Engineer</p>
       <p class="yrs"><b>9+ years</b> building systems</p>
     </div>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <div class="sechead"><span class="label">What we believe</span><h2>Four simple rules.</h2></div>
+  <div class="grid g4">
+    <div class="card hoverable"><span class="snum">V/01</span><h4>Plain words</h4><p>If you need a dictionary to read our email, we wrote it wrong. We explain things the way we would explain them to a friend.</p></div>
+    <div class="card hoverable"><span class="snum">V/02</span><h4>Fixed prices</h4><p>You know the price before we touch anything. No surprise invoice at the end of the month.</p></div>
+    <div class="card hoverable"><span class="snum">V/03</span><h4>You own it</h4><p>It is your account and your data. We never hold your business hostage. Leave any time and take everything.</p></div>
+    <div class="card hoverable"><span class="snum">V/04</span><h4>We say no</h4><p>If we are not the right fit, we tell you on the first call. A bad project helps nobody.</p></div>
   </div>
 </div></section>
 <section><div class="wrap"><div class="cta">
