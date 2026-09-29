@@ -36,7 +36,7 @@ draft: false
   <div class="sechead">
     <span class="label">Who is behind this</span>
     <h2>The people behind<br>GHL Megaminds.</h2>
-    <p>Before GoHighLevel, we spent more than a decade building web apps and custom platforms for companies around the world. We have shipped software, run campaigns, and fixed systems at scale, and now we point all of that experience at one tool. Meet the people who will actually do your work.</p>
+    <p>Before GoHighLevel, we spent more than a decade building web apps and custom platforms for companies around the world. We have shipped software, run campaigns, and fixed systems at scale, and now we point all of that experience at one tool. It is the same people every time, the person who builds your account is the person who answers when you have a question, so nothing gets lost in a handover. Meet the people who will actually do your work.</p>
   </div>
   <div class="grid g3">
     <div class="card pad hoverable member">
@@ -55,7 +55,6 @@ draft: false
       <p class="yrs"><b>9+ years</b> building systems</p>
     </div>
   </div>
-  <p class="muted" style="margin-top:26px;font-size:15px;max-width:66ch">Same people, every time. The person who builds your account is the person who answers when you have a question, so nothing gets lost in a handover.</p>
 </div></section>
 <section><div class="wrap"><div class="cta">
 <span class="label">Next step</span>
