@@ -33,33 +33,29 @@ draft: false
   </div>
 </div></section>
 <section><div class="wrap">
-  <div class="grid g4">
-    <div class="stat card"><div class="big grad">1</div><p>One platform. GoHighLevel and nothing else.</p></div>
-    <div class="stat card"><div class="big grad">6</div><p>Six offers. Three for owners, three for resellers.</p></div>
-    <div class="stat card"><div class="big grad">7</div><p>Days a week you can reach a real person.</p></div>
-    <div class="stat card"><div class="big grad">0</div><p>Long contracts. Ever.</p></div>
+  <div class="sechead">
+    <span class="label">Meet the team</span>
+    <h2>You are in<br>experienced hands.</h2>
+    <p>Your account is set up by certified HighLevel admins and backed by senior software engineers. The same people, every time.</p>
   </div>
-</div></section>
-<section><div class="wrap">
-  <div class="sechead"><span class="label">Who we help</span><h2>You will fit here if&hellip;</h2></div>
-  <div class="grid g2">
-    <div class="card pad"><h3>Good fit</h3>
-      <ul class="ticks">
-        <li>You have a real business with real leads coming in</li>
-        <li>You want the work done for you, not another course</li>
-        <li>You can reply to us within a day or two</li>
-        <li>You want one system instead of six tools</li>
-      </ul>
+  <div class="grid g3">
+    <div class="card pad hoverable member">
+      <div class="ph"><img src='/images/team/mehedi.jpg' alt="Certified GoHighLevel Admin and Founder at GHL Megaminds" width="400" height="400" loading="lazy"></div><span class="badge">Certified Admin</span>
+      <h3>Mehedi Sharif</h3><p class="role">Founder &amp; Software Engineer</p>
+      <p class="yrs"><b>13+ years</b> building software</p>
     </div>
-    <div class="card pad"><h3>Not a fit</h3>
-      <ul class="ticks">
-        <li>You want the cheapest price and nothing else matters</li>
-        <li>You want us to also run ads, design, and SEO</li>
-        <li>You want someone to blame instead of a partner</li>
-        <li>You want it done tomorrow for free</li>
-      </ul>
+    <div class="card pad hoverable member">
+      <div class="ph"><img src='/images/team/farhad.jpg' alt="Certified GoHighLevel Admin and Marketing Engineer at GHL Megaminds" width="400" height="400" loading="lazy"></div><span class="badge">Certified Admin</span>
+      <h3>Farhad Hossen</h3><p class="role">Marketing Engineer</p>
+      <p class="yrs"><b>6+ years</b> building campaigns</p>
+    </div>
+    <div class="card pad hoverable member">
+      <div class="ph"><img src='/images/team/somrat.jpg' alt="Senior Software Engineer at GHL Megaminds" width="400" height="400" loading="lazy"></div><span class="badge">Senior Engineer</span>
+      <h3>Somrat Sorkar</h3><p class="role">Senior Software Engineer</p>
+      <p class="yrs"><b>9+ years</b> building systems</p>
     </div>
   </div>
+  <p class="muted" style="margin-top:26px;font-size:15px;max-width:66ch">Before GoHighLevel, we spent more than ten years building web apps and custom platforms for companies all over the world. Now we point all of that at one tool.</p>
 </div></section>
 <section><div class="wrap"><div class="cta">
 <span class="label">Next step</span>
