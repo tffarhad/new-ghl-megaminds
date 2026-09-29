@@ -1,0 +1,74 @@
+---
+import Logo from "@/components/Logo.astro";
+import config from "@/config/config.json";
+import menu from "@/config/menu.json";
+
+export interface ChildNavigationLink {
+  name: string;
+  url: string;
+}
+
+export interface NavigationLink {
+  name: string;
+  url: string;
+  hasChildren?: boolean;
+  children?: ChildNavigationLink[];
+}
+
+const { main }: { main: NavigationLink[] } = menu;
+const { navigation_button } = config;
+let { pathname } = Astro.url;
+// normalise trailing slash for active-state matching
+if (pathname.length > 1 && pathname.endsWith("/")) {
+  pathname = pathname.slice(0, -1);
+}
+
+const isActive = (url: string) => url !== "#" && pathname === url;
+const childActive = (children?: ChildNavigationLink[]) =>
+  children?.some((c) => isActive(c.url)) ?? false;
+---
+
+<header>
+  <div class="wrap nav">
+    <Logo />
+    <ul class="menu">
+      {
+        main.map((item) =>
+          item.hasChildren ? (
+            <li class="has">
+              <button
+                class={`mtrig${childActive(item.children) ? " on" : ""}`}
+                type="button"
+              >
+                {item.name}
+              </button>
+              <div class="drop">
+                {item.children?.map((child) => (
+                  <a
+                    href={child.url}
+                    class={isActive(child.url) ? "on" : ""}
+                  >
+                    {child.name}
+                  </a>
+                ))}
+              </div>
+            </li>
+          ) : (
+            <li>
+              <a href={item.url} class={isActive(item.url) ? "on" : ""}>
+                {item.name}
+              </a>
+            </li>
+          ),
+        )
+      }
+    </ul>
+    {
+      navigation_button.enable && (
+        <a class="btn pri sm" href={navigation_button.link}>
+          {navigation_button.label}
+        </a>
+      )
+    }
+  </div>
+</header>

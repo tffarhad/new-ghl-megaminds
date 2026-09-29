@@ -1,0 +1,12 @@
+---
+import config from "@/config/config.json";
+
+const { logo_text, title }: { logo_text: string; title: string } = config.site;
+const text = logo_text || title;
+// Split first word so the brand mark ("GHL") can be tinted, matching the design.
+const [first, ...rest] = text.split(" ");
+---
+
+<a href="/" class="logo" aria-label={text}>
+  <span class="grad">{first}</span>{rest.length ? ` ${rest.join(" ")}` : ""}
+</a>

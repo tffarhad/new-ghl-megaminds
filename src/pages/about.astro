@@ -1,0 +1,23 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getListPage } from "@/lib/contentParser.astro";
+import { render } from "astro:content";
+
+const aboutIndex = await getListPage("about", "-index");
+const { title, description, meta_title, image } = aboutIndex.data;
+const { Content } = await render(aboutIndex);
+
+const buildDrafts = process.argv.includes("--buildDrafts");
+if (!buildDrafts && aboutIndex.data.draft) {
+  return Astro.redirect("/404");
+}
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <Content />
+</Base>

@@ -1,0 +1,18 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getListPage } from "@/lib/contentParser.astro";
+import { render } from "astro:content";
+
+const homepage = await getListPage("homepage", "-index");
+const { title, meta_title, description, image } = homepage.data;
+const { Content } = await render(homepage);
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <Content />
+</Base>

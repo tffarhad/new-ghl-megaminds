@@ -1,0 +1,104 @@
+---
+import Base from "@/layouts/Base.astro";
+import { getListPage, getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+
+const BLOG_FOLDER = "blog";
+
+const postIndex = await getListPage(BLOG_FOLDER, "-index");
+const buildDrafts = process.argv.includes("--buildDrafts");
+if (!buildDrafts && postIndex.data.draft) {
+  return Astro.redirect("/404");
+}
+
+const posts = sortByDate(await getSinglePage(BLOG_FOLDER));
+
+const monthYear = (d: Date | undefined) =>
+  d
+    ? new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric" }).format(
+        new Date(d),
+      )
+    : "";
+---
+
+<Base
+  title={postIndex.data.title}
+  meta_title={postIndex.data.meta_title}
+  image={postIndex.data.image}
+  description={postIndex.data.description}
+>
+  <main>
+    <section class="hero first">
+      <div class="wrap">
+        <div class="eyebrow">
+          <span class="label">[ Blog ]</span><span class="plus">++++</span>
+        </div>
+        <h1>
+          Short reads on<br /><span class="grad">making GoHighLevel work.</span>
+        </h1>
+        <p class="lede">
+          We write the things we say on calls all day. Small posts, plain words,
+          one idea each.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="sechead">
+          <span class="label">Latest</span><h2>New posts.</h2>
+        </div>
+        {
+          posts.map((post) => (
+            <a class="post" href={`/blog/${post.id}`}>
+              <div class="meta" set:html={`${monthYear(post.data.date)}<br>${post.data.categories?.[0] ?? ""}`} />
+              <div>
+                <h4>{post.data.title}</h4>
+                <p>{post.data.description}</p>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="sechead">
+          <span class="label">Topics</span><h2>Browse by subject.</h2>
+        </div>
+        <div class="grid g4">
+          <div class="card hoverable">
+            <h4>Setup</h4><p>Getting an account built right the first time.</p>
+          </div>
+          <div class="card hoverable">
+            <h4>Maintenance</h4><p>Keeping it working after launch day.</p>
+          </div>
+          <div class="card hoverable">
+            <h4>Resellers</h4><p>SaaS Mode, pricing, and selling your own software.</p>
+          </div>
+          <div class="card hoverable">
+            <h4>Onboarding</h4><p>Getting clients live and keeping them happy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cta">
+          <span class="label">Next step</span>
+          <h2>Reading is good. Doing is better.</h2>
+          <p>
+            If a post made you nod, book a call. We will do that thing for you
+            this month.
+          </p>
+          <div class="btns">
+            <a class="btn pri" href="/contact">Book a Free Call &rarr;</a>
+            <a class="btn" href="/tools">Get the free guides &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

@@ -1,0 +1,9 @@
+{
+  "main": [
+    {
+      "name": "email",
+      "icon": "FaEnvelope",
+      "link": "mailto:contact@ghlmegaminds.com"
+    }
+  ]
+}
