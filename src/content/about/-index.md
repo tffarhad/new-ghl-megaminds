@@ -6,9 +6,9 @@ draft: false
 ---
 
 <section class="hero first"><div class="wrap">
-  <div class="eyebrow"><span class="label">[ About ]</span><span class="plus">++++</span></div>
-  <h1>A small team that<br><span class="grad">only does GoHighLevel.</span></h1>
-  <p class="lede">We are not a big agency. We do not build apps, run ads, or design logos. We set up GoHighLevel and we keep it running. That is the whole company.</p>
+  <div class="eyebrow"><span class="label">[ Our mission ]</span><span class="plus">++++</span></div>
+  <h1>Make GoHighLevel<br><span class="grad">actually work for you.</span></h1>
+  <p class="lede">Too many businesses pay for GoHighLevel and never get the value out of it. Our mission is to change that. We build your account, keep it running, and explain everything in plain words, so the tool you already pay for finally earns its keep.</p>
 </div></section>
 <section><div class="wrap">
   <div class="grid g2" style="gap:44px">
