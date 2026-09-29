@@ -30,17 +30,6 @@ draft: false
 <div class="meta2"><div class="kind">CS/04 &middot; Reseller / Onboarding support</div><h4>A reseller stopped losing clients in month two</h4><p>We took over onboarding in his brand, with a welcome call and full setup before handover, then training calls. Setup finished for every new client and cancels dropped from about 40% to 9%.</p></div></a>
   </div>
 </div></section>
-<section><div class="wrap">
-  <div class="sechead"><span class="label">The pattern</span><h2>Same story every time.</h2></div>
-  <div class="tblwrap"><table>
-    <tr><th>Client</th><th>Offer used</th><th>Time to live</th><th>Main win</th></tr>
-    <tr><td>Plumbing company</td><td>Complete Build + Care Plus</td><td>12 days</td><td>9 extra jobs a month</td></tr>
-    <tr><td>Business coach</td><td>Starter Build + Care Lite</td><td>9 days</td><td>6 hours a week back</td></tr>
-    <tr><td>Marketing agency</td><td>Launch Plus</td><td>18 days</td><td>4 to 31 accounts</td></tr>
-    <tr><td>SaaS reseller</td><td>Onboard Plus</td><td>Ongoing</td><td>Cancels 40% to 9%</td></tr>
-  </table></div>
-  <p class="disc">These results come from real clients. Your results will depend on your offer, your market, and how many leads you get. We do not promise numbers.</p>
-</div></section>
 <section><div class="wrap"><div class="cta">
 <span class="label">Next step</span>
 <h2>Want to be the next one?</h2>
