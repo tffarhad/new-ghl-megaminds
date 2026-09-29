@@ -88,10 +88,6 @@ draft: false
       <span class="label">Client testimonial</span>
       <blockquote style="margin-top:22px">&ldquo;GHL Megaminds is the team I always call when I need tech help. They have years of experience and know how to build complex solutions. I am so glad they created this team just for GoHighLevel.&rdquo;</blockquote>
       <div class="by"><b>Shariful Islam</b>Founder &amp; CEO, GHL Video</div>
-      <div class="mets">
-        <div class="m"><div class="n">Under 48 hrs</div></div>
-        <div class="m"><div class="n">10+ years</div></div>
-      </div>
     </div>
     <div class="ph"><img src='/images/shariful.jpg' alt="Shariful Islam, Founder and CEO of GHL Video" width="620" height="744" loading="lazy"></div>
   </div>
