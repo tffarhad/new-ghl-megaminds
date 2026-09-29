@@ -34,9 +34,9 @@ draft: false
 </div></section>
 <section><div class="wrap">
   <div class="sechead">
-    <span class="label">Meet the team</span>
-    <h2>You are in<br>experienced hands.</h2>
-    <p>Your account is set up by certified HighLevel admins and backed by senior software engineers. The same people, every time.</p>
+    <span class="label">Who is behind this</span>
+    <h2>The people behind<br>GHL Megaminds.</h2>
+    <p>Before GoHighLevel, we spent more than a decade building web apps and custom platforms for companies around the world. We have shipped software, run campaigns, and fixed systems at scale, and now we point all of that experience at one tool. Meet the people who will actually do your work.</p>
   </div>
   <div class="grid g3">
     <div class="card pad hoverable member">
@@ -55,7 +55,7 @@ draft: false
       <p class="yrs"><b>9+ years</b> building systems</p>
     </div>
   </div>
-  <p class="muted" style="margin-top:26px;font-size:15px;max-width:66ch">Before GoHighLevel, we spent more than ten years building web apps and custom platforms for companies all over the world. Now we point all of that at one tool.</p>
+  <p class="muted" style="margin-top:26px;font-size:15px;max-width:66ch">Same people, every time. The person who builds your account is the person who answers when you have a question, so nothing gets lost in a handover.</p>
 </div></section>
 <section><div class="wrap"><div class="cta">
 <span class="label">Next step</span>
