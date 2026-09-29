@@ -45,9 +45,6 @@ const monthYear = (d: Date | undefined) =>
 
     <section>
       <div class="wrap">
-        <div class="sechead">
-          <span class="label">Latest</span><h2>New posts.</h2>
-        </div>
         {
           posts.map((post) => (
             <a class="post" href={`/blog/${post.id}`}>
