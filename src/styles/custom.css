@@ -273,6 +273,19 @@ tr:last-child td{border-bottom:0}
 .member .yrs{color:var(--dim);font-size:14px;margin-top:10px}
 .member .yrs b{color:var(--ink)}
 
+/* ---------- brands / logo wall ---------- */
+.brands{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:8px}
+.brand{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 18px;
+  min-height:96px;display:flex;align-items:center;justify-content:center;transition:.18s}
+.brand:hover{border-color:var(--line2);transform:translateY(-2px)}
+.brand img{max-height:32px;max-width:100%;width:auto;object-fit:contain;
+  opacity:.75;transition:.18s}
+.brand:hover img{opacity:1}
+.brand.more{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--dim);background:transparent;border-style:dashed}
+@media(max-width:960px){.brands{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.brands{grid-template-columns:repeat(2,1fr)}}
+
 /* ---------- faq ---------- */
 details{border-top:1px solid var(--line);padding:20px 0}
 details:last-of-type{border-bottom:1px solid var(--line)}

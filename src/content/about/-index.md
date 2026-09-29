@@ -48,6 +48,17 @@ draft: false
   </div>
 </div></section>
 <section><div class="wrap">
+  <div class="sechead"><span class="label">Our track record</span><h2>Brands we built in the past.</h2><p>Before GoHighLevel, we designed, built, and scaled products used by hundreds of thousands of people around the world. A few of the brands behind us:</p></div>
+  <div class="brands">
+    <div class="brand"><img src="https://inside.themefisher.com/images/brands/themefisher/logo.png" alt="Themefisher" loading="lazy"></div>
+    <div class="brand"><img src="https://inside.themefisher.com/images/brands/gethugothemes/logo.png" alt="Gethugothemes" loading="lazy"></div>
+    <div class="brand"><img src="https://inside.themefisher.com/images/brands/uihut/logo.png" alt="UIHut" loading="lazy"></div>
+    <div class="brand"><img src="https://inside.themefisher.com/images/brands/sitepins/logo.png" alt="Sitepins" loading="lazy"></div>
+    <div class="brand"><img src="https://inside.themefisher.com/images/brands/zeonstudio/logo.png" alt="Zeon Studio" loading="lazy"></div>
+    <div class="brand more">and more&hellip;</div>
+  </div>
+</div></section>
+<section><div class="wrap">
   <div class="sechead"><span class="label">What we believe</span><h2>Four simple rules.</h2></div>
   <div class="grid g4">
     <div class="card hoverable"><span class="snum">V/01</span><h4>Plain words</h4><p>If you need a dictionary to read our email, we wrote it wrong. We explain things the way we would explain them to a friend.</p></div>
