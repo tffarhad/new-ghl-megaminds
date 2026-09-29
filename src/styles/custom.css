@@ -343,7 +343,7 @@ footer ul a{color:var(--muted);font-size:14px}
 footer ul a:hover{color:var(--ink)}
 footer .about p{color:var(--muted);font-size:14px;margin-top:14px;max-width:36ch}
 .fbot{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;
-  justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--dim);font-size:12.5px}
+  justify-content:center;text-align:center;gap:16px;flex-wrap:wrap;color:var(--dim);font-size:12.5px}
 .disc{color:var(--dim);font-size:12px;margin-top:20px;max-width:80ch;line-height:1.6}
 .bigmark{margin-top:56px;font-size:clamp(54px,15.5vw,210px);font-weight:600;letter-spacing:-.055em;
   line-height:.82;color:rgba(0,0,0,.09);user-select:none;white-space:nowrap;overflow:hidden}
