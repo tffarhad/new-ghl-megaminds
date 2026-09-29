@@ -3,7 +3,7 @@ title: "The first five things to build in a new account"
 meta_title: "The first five things to build in a new account — GHL Megaminds"
 description: "Do not start with workflows. Start here and you will get value in week one."
 date: 2026-09-20
-author: "GHL Megaminds"
+authors: ["Mehedi Sharif", "Farhad Hossen"]
 categories: ["Setup"]
 tags: ["Setup"]
 draft: false

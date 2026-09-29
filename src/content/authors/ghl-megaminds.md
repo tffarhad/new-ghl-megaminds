@@ -1,6 +1,8 @@
 ---
 title: "GHL Megaminds"
-description: "Certified HighLevel admins and software engineers."
+description: "A small team of certified HighLevel admins and software engineers. We set up GoHighLevel accounts, fix what breaks, and look after clients every month."
+role: "The team"
+order: 0
 social:
   - name: "Email"
     icon: "FaEnvelope"

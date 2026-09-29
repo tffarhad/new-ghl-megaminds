@@ -5,9 +5,10 @@ description: "Every lead answered, nothing falling through. We set up your GoHig
 draft: false
 ---
 
-<section class="bhero first">
+<section class="bhero first full">
   <div class="sweep"><div class="s1"></div><div class="s2"></div></div>
   <div class="wrap">
+   <div class="heromain">
     <div class="eyebrow"><span class="label">For business owners</span></div>
     <h1>Every lead answered.<br><span class="grad">Nothing falling through.</span></h1>
     <div class="herofoot">
@@ -18,6 +19,13 @@ draft: false
         </div>
       </div>
       <p>Picture your account working on its own. A lead fills a form and gets a text back in seconds. The job goes on the calendar. The review request sends itself. You did not touch a single workflow. That is what we build, and then we keep it that way.</p>
+    </div>
+   </div>
+    <div class="herostats">
+      <div class="hstat"><div class="big">10+</div><p>Years of real software engineering, now pointed at the GoHighLevel ecosystem.</p></div>
+      <div class="hstat"><div class="big">100%</div><p>Certified HighLevel admins. Nobody ever learns on your account.</p></div>
+      <div class="hstat"><div class="big">500+</div><p>Clients served around the world over the last ten years.</p></div>
+      <div class="hstat"><div class="big">200K+</div><p>People have used the products we built, across many different brands.</p></div>
     </div>
   </div>
 </section>
@@ -69,24 +77,25 @@ draft: false
   </div>
 </div></section>
 <section><div class="wrap">
-  <div class="sechead"><span class="label">How it works</span><h2>Four steps.<br>No mystery.</h2></div>
-  <div class="steprow s4">
-    <div class="stepc"><div class="n">01</div><h4>We talk</h4><p>A free call, about 30 minutes. You say what your business does. We say what we would build.</p></div>
-    <div class="stepc"><div class="n">02</div><h4>We plan</h4><p>A short plan in plain words. What we build, what it costs, and the day it will be done.</p></div>
-    <div class="stepc"><div class="n">03</div><h4>We build</h4><p>We work inside your account and test every form, text, and email. You get a walkthrough video.</p></div>
-    <div class="stepc"><div class="n">04</div><h4>We stay</h4><p>Pick a monthly plan and we keep watch. It breaks, we fix it. You ask, it gets done.</p></div>
+  <div class="flowhead"><span class="pillhead">Process</span><h2>Four steps.<br>No mystery.</h2></div>
+  <div class="flow f4"><div class="flowline" aria-hidden="true"><svg viewBox="0 0 1000 76" preserveAspectRatio="none" fill="none"><path d="M0 38 C 166 0, 334 76, 500 38 S 834 0, 1000 38" stroke="rgba(0,0,0,.14)" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg></div>
+   <div class="flowsteps s4">
+    <div class="flowstep"><div class="flowicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H7.5L3.5 22.5V17A8 8 0 1 1 21 12Z"/></svg></div><h4>We talk</h4><p>A free call, about 30 minutes. You say what your business does. We say what we would build.</p></div>
+    <div class="flowstep"><div class="flowicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4.5" width="12" height="16.5" rx="2.2"/><path d="M9.5 4.5v-.8A1.7 1.7 0 0 1 11.2 2h1.6a1.7 1.7 0 0 1 1.7 1.7v.8"/><path d="M9.3 10.5h5.4M9.3 14.2h5.4"/></svg></div><h4>We plan</h4><p>A short plan in plain words. What we build, what it costs, and the day it will be done.</p></div>
+    <div class="flowstep"><div class="flowicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.8 3.6a4.9 4.9 0 0 0 5.9 6.7l-8.4 8.4a2.4 2.4 0 0 1-3.4-3.4l8.4-8.4a4.9 4.9 0 0 0-2.5-3.3Z"/><path d="m6.2 16.4-2 2a2 2 0 0 0 2.8 2.8l2-2"/></svg></div><h4>We build</h4><p>We work inside your account and test every form, text, and email. You get a walkthrough video.</p></div>
+    <div class="flowstep"><div class="flowicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5.2 5.9v5.4c0 4.1 2.9 7.7 6.8 8.6 3.9-.9 6.8-4.5 6.8-8.6V5.9L12 3Z"/><path d="m9.4 11.9 1.8 1.8 3.5-3.7"/></svg></div><h4>We stay</h4><p>Pick a monthly plan and we keep watch. It breaks, we fix it. You ask, it gets done.</p></div>
+   </div>
   </div>
 </div></section>
 <section id="pricing"><div class="wrap">
   <div class="sechead"><span class="label">Pricing / Setup</span><h2>One time build.</h2>
-  <p>You pay once and keep the build forever. Half up front, half when it is done. Both discounts are already taken off.</p></div>
+  <p>You pay once and keep the build forever. Half up front, half when it is done. The discount is already taken off.</p></div>
   <div class="grid g3">
     <div class="price">
 <div class="pname">Starter Build</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$2,050</s></div>
-  <div class="srow cut"><span class="rl">New client discount</span><b>$1,550</b></div>
-  <div class="srow cut"><span class="rl">Switch discount, 20% off</span><b>$1,240</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$1,240</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$1,240</div><div class="per">one time, all in</div>
@@ -98,8 +107,7 @@ draft: false
 <div class="pname">Complete Build</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$2,350</s></div>
-  <div class="srow cut"><span class="rl">New client discount</span><b>$1,850</b></div>
-  <div class="srow cut"><span class="rl">Switch discount, 20% off</span><b>$1,480</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$1,480</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$1,480</div><div class="per">one time, all in</div>
@@ -111,8 +119,7 @@ draft: false
 <div class="pname">Custom Build</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$4,350</s></div>
-  <div class="srow cut"><span class="rl">New client discount</span><b>$3,850</b></div>
-  <div class="srow cut"><span class="rl">Switch discount, 20% off</span><b>$3,080</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$3,080</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$3,080</div><div class="per">one time, all in</div>
@@ -134,8 +141,7 @@ draft: false
 <div class="pname">Care Lite</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$575</s></div>
-  <div class="srow cut"><span class="rl">Founding client discount</span><b>$425</b></div>
-  <div class="srow cut"><span class="rl">Build and care, 20% off</span><b>$340</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$340</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$340</div><div class="per">per month</div>
@@ -147,8 +153,7 @@ draft: false
 <div class="pname">Care Plus</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$750</s></div>
-  <div class="srow cut"><span class="rl">Founding client discount</span><b>$600</b></div>
-  <div class="srow cut"><span class="rl">Build and care, 20% off</span><b>$480</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$480</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$480</div><div class="per">per month</div>
@@ -160,8 +165,7 @@ draft: false
 <div class="pname">Care Pro</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$1,725</s></div>
-  <div class="srow cut"><span class="rl">Founding client discount</span><b>$1,575</b></div>
-  <div class="srow cut"><span class="rl">Build and care, 20% off</span><b>$1,260</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$1,260</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$1,260</div><div class="per">per month</div>
@@ -172,13 +176,12 @@ draft: false
   </div>
   <div class="card pad" style="margin-top:26px">
 <span class="label">How our pricing works</span>
-<h3 style="margin-top:14px">Two discounts. Both have a reason.</h3>
+<h3 style="margin-top:14px">One discount. Here is the reason.</h3>
 <div class="why">
-  <div><h4>New client discount &mdash; $500 off</h4><p class="muted" style="font-size:15px;margin-top:8px">You have never worked with us, so you are taking a chance on us. We take $500 off for that. It runs this month and we do not promise it after.</p></div>
-  <div><h4>Switch discount &mdash; 20% off</h4><p class="muted" style="font-size:15px;margin-top:8px">Moving off your old tools is a pain and you keep paying for them while we build. Another 20% comes off to cover the overlap.</p></div>
+  <div><h4>Founding client discount</h4><p class="muted" style="font-size:15px;margin-top:8px">We are new and you have never worked with us, so you are taking a chance on us. Moving off your old tools also means paying for them while we build. The discount covers both, and it is already off every price above.</p></div>
+  <div><h4>What you actually pay</h4><p class="muted" style="font-size:15px;margin-top:8px">The discounted price is the real price. Nothing gets added at the end. Setup is half up front and half when it is done, and monthly care is month to month with no cancellation fee.</p></div>
 </div>
 </div>
-  <p class="disc">Prices are in US dollars. They do not include what you pay HighLevel for the software, or your texts, calls, and emails. Those go straight to HighLevel.</p>
 </div></section>
 <section><div class="wrap"><div class="cta">
 <span class="label">Next step</span>

@@ -1,9 +1,24 @@
 {
   "main": [
     {
-      "name": "email",
-      "icon": "FaEnvelope",
-      "link": "mailto:contact@ghlmegaminds.com"
+      "name": "facebook",
+      "icon": "FaFacebookF",
+      "link": "#"
+    },
+    {
+      "name": "github",
+      "icon": "FaGithub",
+      "link": "#"
+    },
+    {
+      "name": "linkedin",
+      "icon": "FaLinkedinIn",
+      "link": "#"
+    },
+    {
+      "name": "youtube",
+      "icon": "FaYoutube",
+      "link": "#"
     }
   ]
 }

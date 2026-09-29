@@ -1,11 +1,23 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { getListPage } from "@/lib/contentParser.astro";
+import { ORG_ID, canonicalUrl } from "@/lib/seo";
 import { render } from "astro:content";
 
 const contactIndex = await getListPage("contact", "-index");
 const { title, description, meta_title, image } = contactIndex.data;
 const { Content } = await render(contactIndex);
+
+const schema = [
+  {
+    "@type": "ContactPage",
+    "@id": `${canonicalUrl("/contact")}#webpage`,
+    url: canonicalUrl("/contact"),
+    name: contactIndex.data.meta_title || contactIndex.data.title,
+    description: contactIndex.data.description,
+    mainEntity: { "@id": ORG_ID },
+  },
+];
 
 const buildDrafts = process.argv.includes("--buildDrafts");
 if (!buildDrafts && contactIndex.data.draft) {
@@ -18,6 +30,7 @@ if (!buildDrafts && contactIndex.data.draft) {
   meta_title={meta_title}
   description={description}
   image={image}
+  schema={schema}
 >
   <Content />
 </Base>

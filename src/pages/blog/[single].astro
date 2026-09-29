@@ -1,7 +1,10 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import { postAuthors } from "@/lib/utils/authors";
 import { sortByDate } from "@/lib/utils/sortFunctions";
+import { slugify } from "@/lib/utils/textConverter";
+import { ORG_ID, SITE, absoluteUrl, canonicalUrl } from "@/lib/seo";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -20,6 +23,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { title, meta_title, description, image, date, categories } = post.data;
 const { Content } = await render(post);
+const authors = postAuthors(post);
 
 const allPosts = sortByDate(await getSinglePage("blog"));
 const more = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
@@ -30,6 +34,37 @@ const monthYear = (d: Date | undefined) =>
         new Date(d),
       )
     : "";
+
+const postUrl = canonicalUrl(`/blog/${post.id}`);
+const schema = [
+  {
+    "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
+    headline: title,
+    name: title,
+    description,
+    url: postUrl,
+    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
+    ...(date ? { datePublished: new Date(date).toISOString() } : {}),
+    ...(date ? { dateModified: new Date(date).toISOString() } : {}),
+    author: authors.map((name) => ({
+      "@type": "Person",
+      name,
+      url: canonicalUrl(`/authors/${slugify(name)}`),
+    })),
+    publisher: { "@id": ORG_ID },
+    image: absoluteUrl(image || SITE.image),
+    inLanguage: SITE.lang,
+    ...(post.data.tags?.length ? { keywords: post.data.tags.join(", ") } : {}),
+    ...(categories?.length ? { articleSection: categories } : {}),
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${canonicalUrl("/blog")}#blog`,
+      name: `${SITE.name} — Blog`,
+      publisher: { "@id": ORG_ID },
+    },
+  },
+];
 ---
 
 <Base
@@ -37,6 +72,12 @@ const monthYear = (d: Date | undefined) =>
   meta_title={meta_title}
   description={description}
   image={image}
+  type="article"
+  schema={schema}
+  publishedTime={date}
+  modifiedTime={date}
+  articleAuthors={authors}
+  articleTags={post.data.tags}
 >
   <main>
     <section class="hero first">
@@ -46,7 +87,24 @@ const monthYear = (d: Date | undefined) =>
           <span class="plus">++++</span>
         </div>
         <h1>{title}</h1>
-        <p class="lede">{monthYear(date)}</p>
+        <p class="lede">
+          {monthYear(date)}
+          {
+            authors.length > 0 && (
+              <span class="byline-inline">
+                {" · "}
+                {authors.map((name, i) => (
+                  <>
+                    <a class="ulink" href={`/authors/${slugify(name)}`}>
+                      {name}
+                    </a>
+                    {i !== authors.length - 1 && " & "}
+                  </>
+                ))}
+              </span>
+            )
+          }
+        </p>
       </div>
     </section>
 

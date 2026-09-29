@@ -27,7 +27,11 @@ const filterByTags = taxonomyFilter(posts, "tags", tag!);
 const sortedPosts = sortByDate(filterByTags);
 ---
 
-<Base title={tag}>
+<Base
+  title={tag}
+  meta_title={`${tag} — GHL Megaminds blog`}
+  description={`Every GHL Megaminds post tagged ${tag}. Short, practical reads on getting real work out of GoHighLevel.`}
+>
   <PageHeader title={tag} />
   <div class="section-sm pb-0">
     <div class="container">

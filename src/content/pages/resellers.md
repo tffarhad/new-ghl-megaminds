@@ -5,9 +5,10 @@ description: "You sign the client, we do all the rest. SaaS Mode setup, fixes, a
 draft: false
 ---
 
-<section class="bhero first">
+<section class="bhero first full">
   <div class="sweep"><div class="s1"></div><div class="s2"></div></div>
   <div class="wrap">
+   <div class="heromain">
     <div class="eyebrow"><span class="label">For resellers</span></div>
     <h1>You sign the client.<br><span class="grad">We do all the rest.</span></h1>
     <div class="herofoot">
@@ -18,6 +19,13 @@ draft: false
         </div>
       </div>
       <p>Picture your software running itself. Someone signs up on your page, pays you, and their account opens with your logo on it. Our team sets them up, trains them, and answers them, all under your name. You stay on sales calls.</p>
+    </div>
+   </div>
+    <div class="herostats">
+      <div class="hstat"><div class="big">10+</div><p>Years of real software engineering, now pointed at the GoHighLevel ecosystem.</p></div>
+      <div class="hstat"><div class="big">100%</div><p>Certified HighLevel admins. Nobody ever learns on your account.</p></div>
+      <div class="hstat"><div class="big">500+</div><p>Clients served around the world over the last ten years.</p></div>
+      <div class="hstat"><div class="big">200K+</div><p>People have used the products we built, across many different brands.</p></div>
     </div>
   </div>
 </section>
@@ -69,23 +77,24 @@ draft: false
   </div>
 </div></section>
 <section><div class="wrap">
-  <div class="sechead"><span class="label">How it works</span><h2>Three steps to<br>technical freedom.</h2></div>
-  <div class="steprow s3">
-    <div class="stepc"><div class="n">01</div><h4>Book a scoping call</h4><p>Thirty minutes. We look at your bottleneck, how many clients you sign, and what you need built.</p></div>
-    <div class="stepc"><div class="n">02</div><h4>Plug us in</h4><p>We join your Slack, Teams, or help desk under your brand. To your clients we are just your team.</p></div>
-    <div class="stepc"><div class="n">03</div><h4>Hand off and scale</h4><p>You close clients. We build, onboard, and support behind the scenes. You stop being the bottleneck.</p></div>
+  <div class="flowhead"><span class="pillhead">Process</span><h2>Three steps to<br>technical freedom.</h2></div>
+  <div class="flow f3"><div class="flowline" aria-hidden="true"><svg viewBox="0 0 1000 76" preserveAspectRatio="none" fill="none"><path d="M0 38 C 166 0, 334 76, 500 38 S 834 0, 1000 38" stroke="rgba(0,0,0,.14)" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg></div>
+   <div class="flowsteps s3">
+    <div class="flowstep"><div class="flowicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.2" width="17" height="15.3" rx="2.6"/><path d="M8 3v4.4M16 3v4.4M3.5 10.6h17"/><path d="M8.6 14.4h2.2M13.4 14.4h2"/></svg></div><h4>Book a scoping call</h4><p>Thirty minutes. We look at your bottleneck, how many clients you sign, and what you need built.</p></div>
+    <div class="flowstep"><div class="flowicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.2 2.8v4.6M14.8 2.8v4.6"/><path d="M6.8 7.4h10.4v3.1a5.2 5.2 0 0 1-10.4 0V7.4Z"/><path d="M12 15.7v5.5"/></svg></div><h4>Plug us in</h4><p>We join your Slack, Teams, or help desk under your brand. To your clients we are just your team.</p></div>
+    <div class="flowstep"><div class="flowicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8c3.6 2.2 5.6 5.7 5.6 9.8L12 18.2l-5.6-5.6c0-4.1 2-7.6 5.6-9.8Z"/><circle cx="12" cy="10.2" r="1.9"/><path d="m8.4 16.6-2.2 2.3 3-.6M15.6 16.6l2.2 2.3-3-.6"/></svg></div><h4>Hand off and scale</h4><p>You close clients. We build, onboard, and support behind the scenes. You stop being the bottleneck.</p></div>
+   </div>
   </div>
 </div></section>
 <section id="pricing"><div class="wrap">
   <div class="sechead"><span class="label">Pricing / SaaS Mode Setup</span><h2>One time build.</h2>
-  <p>You pay once. Half up front, half when your first test account opens. Both discounts are already taken off.</p></div>
+  <p>You pay once. Half up front, half when your first test account opens. The discount is already taken off.</p></div>
   <div class="grid g3">
     <div class="price">
 <div class="pname">Launch</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$2,650</s></div>
-  <div class="srow cut"><span class="rl">New reseller discount</span><b>$2,150</b></div>
-  <div class="srow cut"><span class="rl">Empty account discount, 20% off</span><b>$1,720</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$1,720</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$1,720</div><div class="per">one time, all in</div>
@@ -97,8 +106,7 @@ draft: false
 <div class="pname">Launch Plus</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$2,950</s></div>
-  <div class="srow cut"><span class="rl">New reseller discount</span><b>$2,450</b></div>
-  <div class="srow cut"><span class="rl">Empty account discount, 20% off</span><b>$1,960</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$1,960</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$1,960</div><div class="per">one time, all in</div>
@@ -110,8 +118,7 @@ draft: false
 <div class="pname">White-Glove</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$5,600</s></div>
-  <div class="srow cut"><span class="rl">New reseller discount</span><b>$5,100</b></div>
-  <div class="srow cut"><span class="rl">Empty account discount, 20% off</span><b>$4,080</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$4,080</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$4,080</div><div class="per">one time, all in</div>
@@ -133,8 +140,7 @@ draft: false
 <div class="pname">Onboard Lite</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$900</s></div>
-  <div class="srow cut"><span class="rl">Founding reseller discount</span><b>$700</b></div>
-  <div class="srow cut"><span class="rl">Built by us, 20% off</span><b>$560</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$560</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$560</div><div class="per">per month</div>
@@ -146,8 +152,7 @@ draft: false
 <div class="pname">Onboard Plus</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$1,150</s></div>
-  <div class="srow cut"><span class="rl">Founding reseller discount</span><b>$950</b></div>
-  <div class="srow cut"><span class="rl">Built by us, 20% off</span><b>$760</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$760</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$760</div><div class="per">per month</div>
@@ -159,8 +164,7 @@ draft: false
 <div class="pname">Onboard Unlimited</div>
 <div class="steps">
   <div class="srow"><span class="rl">Regular price</span><s>$2,150</s></div>
-  <div class="srow cut"><span class="rl">Founding reseller discount</span><b>$1,950</b></div>
-  <div class="srow cut"><span class="rl">Built by us, 20% off</span><b>$1,560</b></div>
+  <div class="srow cut"><span class="rl">Discounted price</span><b>$1,560</b></div>
 </div>
 <div class="today">Your price today</div>
 <div class="amt">$1,560</div><div class="per">per month</div>
@@ -171,10 +175,10 @@ draft: false
   </div>
   <div class="card pad" style="margin-top:26px">
 <span class="label">How our pricing works</span>
-<h3 style="margin-top:14px">Two discounts. Both have a reason.</h3>
+<h3 style="margin-top:14px">One discount. Here is the reason.</h3>
 <div class="why">
-  <div><h4>Founding reseller discount &mdash; $200 off every month</h4><p class="muted" style="font-size:15px;margin-top:8px">We are new and we want our first resellers to grow with us for years. Join now and this comes off your bill every month, not just the first one.</p></div>
-  <div><h4>Built by us discount &mdash; 20% off</h4><p class="muted" style="font-size:15px;margin-top:8px">If we built your SaaS Mode, we already know your plans and snapshots, so onboarding takes us less time. You get that saving.</p></div>
+  <div><h4>Founding reseller discount</h4><p class="muted" style="font-size:15px;margin-top:8px">We are new and we want our first resellers to grow with us for years. Join now and the discount is already off every price above, and it stays off your monthly bill for as long as you stay, not just the first month.</p></div>
+  <div><h4>What you actually pay</h4><p class="muted" style="font-size:15px;margin-top:8px">The discounted price is the real price. Nothing gets added at the end. Setup is half up front and half when your first test account opens, and onboarding is month to month with no cancellation fee.</p></div>
 </div>
 </div>
   <p class="disc">Prices are in US dollars. They do not include your HighLevel agency plan, or what your clients use in texts, calls, emails, and AI. You keep 100% of what you charge your clients.</p>

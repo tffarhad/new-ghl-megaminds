@@ -62,7 +62,39 @@ export default defineConfig({
 
   integrations: [
     react(),
-    sitemap(),
+    sitemap({
+      // 404 and paginated duplicates add no value in a sitemap.
+      filter: (page) =>
+        !/\/404\/?$/.test(page) && !/\/blog\/page\/\d+\/?$/.test(page),
+      changefreq: "weekly",
+      lastmod: new Date(),
+      serialize(item) {
+        const path = item.url.replace(config.site.base_url, "").replace(/\/$/, "");
+        // Money pages first, then the rest of the marketing site, then archives.
+        if (path === "") {
+          item.priority = 1.0;
+          item.changefreq = "weekly";
+        } else if (["/business-owners", "/resellers", "/contact"].includes(path)) {
+          item.priority = 0.9;
+        } else if (path.startsWith("/case-studies") || path === "/about" || path === "/tools") {
+          item.priority = 0.8;
+        } else if (path.startsWith("/blog/")) {
+          item.priority = 0.7;
+          item.changefreq = "monthly";
+        } else if (path === "/blog" || path === "/authors") {
+          item.priority = 0.6;
+        } else if (path.startsWith("/categories") || path.startsWith("/tags") || path.startsWith("/authors/")) {
+          item.priority = 0.4;
+          item.changefreq = "monthly";
+        } else if (path === "/privacy" || path === "/terms") {
+          item.priority = 0.2;
+          item.changefreq = "yearly";
+        } else {
+          item.priority = 0.5;
+        }
+        return item;
+      },
+    }),
     AutoImport({
       imports: [
         "@/shortcodes/Button",

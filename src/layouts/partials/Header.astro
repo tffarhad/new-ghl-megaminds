@@ -31,7 +31,16 @@ const childActive = (children?: ChildNavigationLink[]) =>
 <header>
   <div class="wrap nav">
     <Logo />
-    <ul class="menu">
+    <button
+      class="navtoggle"
+      type="button"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      aria-controls="primary-menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="menu" id="primary-menu">
       {
         main.map((item) =>
           item.hasChildren ? (
@@ -72,3 +81,42 @@ const childActive = (children?: ChildNavigationLink[]) =>
     }
   </div>
 </header>
+
+<script is:inline>
+  // Mobile nav toggle. Delegated + guarded so it survives view transitions.
+  (function () {
+    if (window.__ghlNavInit) return;
+    window.__ghlNavInit = true;
+
+    var close = function () {
+      document.querySelectorAll(".nav.open").forEach(function (nav) {
+        nav.classList.remove("open");
+        var t = nav.querySelector(".navtoggle");
+        if (t) t.setAttribute("aria-expanded", "false");
+      });
+    };
+
+    document.addEventListener("click", function (e) {
+      var toggle = e.target.closest(".navtoggle");
+      if (toggle) {
+        var nav = toggle.closest(".nav");
+        if (!nav) return;
+        var open = nav.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        return;
+      }
+      // close after choosing a destination
+      if (e.target.closest(".nav .menu a")) close();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+
+    // never leave the panel open across a navigation or a resize to desktop
+    document.addEventListener("astro:after-swap", close);
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 680) close();
+    });
+  })();
+</script>

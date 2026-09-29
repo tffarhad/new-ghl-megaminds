@@ -28,7 +28,11 @@ const filterByCategories = taxonomyFilter(posts, "categories", category!);
 const sortedPosts = sortByDate(filterByCategories);
 ---
 
-<Base title={category}>
+<Base
+  title={category}
+  meta_title={`${category} — GHL Megaminds blog`}
+  description={`Every GHL Megaminds post filed under ${category}. Short, practical reads on getting real work out of GoHighLevel.`}
+>
   <PageHeader title={category} />
   <div class="section-sm pb-0">
     <div class="container">
