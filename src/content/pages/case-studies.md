@@ -6,42 +6,29 @@ draft: false
 ---
 
 <section class="hero first"><div class="wrap">
-  <div class="eyebrow"><span class="label">[ Case studies ]</span><span class="plus">++++</span></div>
+  <div class="eyebrow"><span class="label">Case studies</span></div>
   <h1>Real builds.<br><span class="grad">Real numbers.</span></h1>
   <p class="lede">Here is what happened after we built and looked after four accounts. Names are hidden because clients asked us to. The numbers are theirs.</p>
 </div></section>
 <section><div class="wrap">
-  <div class="sechead"><span class="snum">CS/01 &nbsp;&middot;&nbsp; Home services / Business owner</span><h2>A plumber stopped losing calls.</h2></div>
-  <div class="grid g3">
-    <div class="card pad"><h4>The problem</h4><p>He missed about 20 calls a week while under a sink. Nobody called them back. Most of those people just called the next plumber.</p></div>
-    <div class="card pad"><h4>What we did</h4><ul class="ticks"><li>Built a simple lead funnel</li><li>Turned on missed call text back</li><li>Set up a pipeline his office could read</li><li>Added a review request after every job</li></ul></div>
-    <div class="card pad"><h4>What happened</h4><ul class="ticks"><li>Every missed call now gets a text in 30 seconds</li><li>About 9 extra booked jobs a month</li><li>Went from 11 to 64 Google reviews in 5 months</li></ul></div>
+  <div class="work">
+    <a class="tile w7" href="/contact">
+<div class="panel" style="background:#E4F3C2"><div class="wm" style="color:#2C4400">Plumbing</div>
+<div class="pills"><span class="pill">9 jobs / mo</span><span class="pill">11 &rarr; 64 reviews</span></div></div>
+<div class="meta2"><div class="kind">CS/01 &middot; Home services / Business owner</div><h4>A plumber stopped losing calls</h4><p>Missed call text back and a pipeline his office could read. Every missed call now gets a text in 30 seconds, about 9 extra booked jobs a month, and reviews grew from 11 to 64 in five months.</p></div></a>
+    <a class="tile w5" href="/contact">
+<div class="panel" style="background:#0B0B0B"><div class="wm" style="color:#C6F24E">Coaching</div>
+<div class="pills"><span class="pill">No-shows 30 &rarr; 11%</span><span class="pill">6 hrs / wk</span></div></div>
+<div class="meta2"><div class="kind">CS/02 &middot; Coaching / Business owner</div><h4>A coach cut her admin time in half</h4><p>Calendars with real booking rules, automatic reminders, and connected payments. No-shows dropped from 30% to 11% and she got about six hours a week back.</p></div></a>
+    <a class="tile w5" href="/contact">
+<div class="panel" style="background:#DCE4FB"><div class="wm" style="color:#1B2C66">SaaS Mode</div>
+<div class="pills"><span class="pill">4 &rarr; 31 accounts</span><span class="pill">5x revenue</span></div></div>
+<div class="meta2"><div class="kind">CS/03 &middot; Reseller / SaaS Mode</div><h4>An agency turned into a software company</h4><p>SaaS Mode, Stripe, three plans, and a self serve sign up page. New clients sign up without him, 4 to 31 paying accounts in seven months, recurring revenue up about 5x.</p></div></a>
+    <a class="tile w7" href="/contact">
+<div class="panel" style="background:#EFE4D8"><div class="wm" style="color:#5A3418">Onboarding</div>
+<div class="pills"><span class="pill">Cancels 40 &rarr; 9%</span><span class="pill">100% setup</span></div></div>
+<div class="meta2"><div class="kind">CS/04 &middot; Reseller / Onboarding support</div><h4>A reseller stopped losing clients in month two</h4><p>We took over onboarding in his brand, with a welcome call and full setup before handover, then training calls. Setup finished for every new client and cancels dropped from about 40% to 9%.</p></div></a>
   </div>
-  <div class="quote" style="margin-top:34px"><p>&ldquo;The text back thing paid for the whole build in the first month.&rdquo;</p><div class="who">Owner / Plumbing company, 6 staff</div></div>
-</div></section><section><div class="wrap">
-  <div class="sechead"><span class="snum">CS/02 &nbsp;&middot;&nbsp; Coaching / Business owner</span><h2>A coach cut her admin time in half.</h2></div>
-  <div class="grid g3">
-    <div class="card pad"><h4>The problem</h4><p>She booked calls by email, sent reminders by hand, and chased payments on WhatsApp. She spent more time on admin than coaching.</p></div>
-    <div class="card pad"><h4>What we did</h4><ul class="ticks"><li>Set up calendars with real booking rules</li><li>Built reminder texts and emails</li><li>Connected payments to the booking</li><li>Built a follow up for people who did not book</li></ul></div>
-    <div class="card pad"><h4>What happened</h4><ul class="ticks"><li>No more manual reminders</li><li>No show rate dropped from 30% to 11%</li><li>She got about 6 hours a week back</li></ul></div>
-  </div>
-  <div class="quote" style="margin-top:34px"><p>&ldquo;I did not know my calendar could just do all of that by itself.&rdquo;</p><div class="who">Founder / Business coaching</div></div>
-</div></section><section><div class="wrap">
-  <div class="sechead"><span class="snum">CS/03 &nbsp;&middot;&nbsp; Reseller / SaaS Mode</span><h2>An agency turned into a software company.</h2></div>
-  <div class="grid g3">
-    <div class="card pad"><h4>The problem</h4><p>He had 4 clients on GoHighLevel but was billing them by hand each month. He wanted to sell it as his own software and could not get SaaS Mode set up right.</p></div>
-    <div class="card pad"><h4>What we did</h4><ul class="ticks"><li>Set up SaaS Mode and Stripe</li><li>Built 3 plans at 3 prices</li><li>Put his brand and domain on everything</li><li>Built a sign up page that opens accounts by itself</li><li>Made a starter snapshot for his niche</li></ul></div>
-    <div class="card pad"><h4>What happened</h4><ul class="ticks"><li>New clients now sign up without him</li><li>Went from 4 to 31 paying accounts in 7 months</li><li>Recurring revenue up about 5x</li></ul></div>
-  </div>
-  <div class="quote" style="margin-top:34px"><p>&ldquo;I sold three accounts the week after it went live. It just worked while I slept.&rdquo;</p><div class="who">Owner / Marketing agency</div></div>
-</div></section><section><div class="wrap">
-  <div class="sechead"><span class="snum">CS/04 &nbsp;&middot;&nbsp; Reseller / Onboarding support</span><h2>A reseller stopped losing clients in month two.</h2></div>
-  <div class="grid g3">
-    <div class="card pad"><h4>The problem</h4><p>He was good at selling but bad at onboarding. New clients never finished setup, never logged in, and cancelled after two months.</p></div>
-    <div class="card pad"><h4>What we did</h4><ul class="ticks"><li>Took over all new client onboarding in his brand</li><li>Ran a welcome call for every new client</li><li>Set up each account fully before handover</li><li>Ran training calls and answered client questions</li></ul></div>
-    <div class="card pad"><h4>What happened</h4><ul class="ticks"><li>Setup finished for 100% of new clients</li><li>Cancels dropped from about 40% to 9%</li><li>He got his selling time back</li></ul></div>
-  </div>
-  <div class="quote" style="margin-top:34px"><p>&ldquo;I sell, they set up. That split fixed my whole business.&rdquo;</p><div class="who">Founder / SaaS reseller</div></div>
 </div></section>
 <section><div class="wrap">
   <div class="sechead"><span class="label">The pattern</span><h2>Same story every time.</h2></div>
