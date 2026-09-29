@@ -10,7 +10,11 @@ const tags = await getTaxonomy(BLOG_FOLDER, "tags");
 const allTags = await getAllTaxonomy(BLOG_FOLDER, "tags");
 ---
 
-<Base title={"Tags"}>
+<Base
+  title="Tags"
+  meta_title="Blog tags — GHL Megaminds"
+  description="Browse the GHL Megaminds blog by tag. Short, practical reads on making GoHighLevel work."
+>
   <PageHeader title={"Tags"} />
   <section class="section">
     <div class="container text-center">

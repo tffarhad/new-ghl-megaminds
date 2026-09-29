@@ -1,5 +1,7 @@
 ---
 import config from "@/config/config.json";
+import social from "@/config/social.json";
+import DynamicIcon from "@/helpers/DynamicIcon";
 const { copyright } = config.params;
 ---
 
@@ -7,16 +9,32 @@ const { copyright } = config.params;
   <div class="wrap">
     <div class="fgrid">
       <div class="about">
-        <div class="logo"><span class="grad">GHL</span> Megaminds</div>
+        <div class="logo">GHL Megaminds</div>
         <p>
           We set up GoHighLevel and keep it running. For business owners and for
           resellers who sell it as their own software.
         </p>
-        <div class="btns" style="margin-top:22px">
-          <a class="btn sm" href="mailto:contact@ghlmegaminds.com"
-            >contact@ghlmegaminds.com</a
-          >
-        </div>
+        <ul
+          class="socials"
+          style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:10px;list-style:none;margin:22px 0 0;padding:0"
+        >
+          {
+            social.main.map((item) => (
+              <li style="display:inline-flex;margin:0">
+                <a
+                  aria-label={item.name}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;font-size:16px;border-radius:999px;border:1px solid var(--line2);color:var(--muted)"
+                >
+                  <span class="sr-only">{item.name}</span>
+                  <DynamicIcon icon={item.icon} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
       <div>
         <h5>Services</h5>

@@ -19,7 +19,10 @@ const blogCollection = defineCollection({
     description: z.string().optional(),
     date: z.coerce.date().optional(),
     image: z.string().optional(),
-    author: z.string().default("Admin"),
+    // a post can be written by one or several people; `author` is kept for
+    // backwards compatibility with existing posts
+    author: z.string().optional(),
+    authors: z.array(z.string()).optional(),
     categories: z.array(z.string()).default(() => ["others"]),
     tags: z.array(z.string()).default(() => ["others"]),
     draft: z.boolean().optional(),
@@ -31,6 +34,8 @@ const authorsCollection = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/authors" }),
   schema: z.object({
     ...pageFields,
+    role: z.string().optional(),
+    order: z.number().default(99),
     social: z
       .array(
         z
@@ -69,6 +74,27 @@ const contactCollection = defineCollection({
   schema: z.object({ ...pageFields }),
 });
 
+// Case studies
+const caseStudiesCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/case-studies" }),
+  schema: z.object({
+    ...pageFields,
+    order: z.number().default(99),
+    num: z.string(), // "CS/01"
+    kind: z.string(), // "Home services / Business owner"
+    summary: z.string(), // card text on the index
+    // index tile artwork
+    panel_label: z.string(),
+    panel_bg: z.string(),
+    panel_ink: z.string(),
+    wide: z.boolean().default(false),
+    // headline figures, shown as pills on the index and as a strip on the detail page
+    results: z
+      .array(z.object({ value: z.string(), label: z.string() }))
+      .default(() => []),
+  }),
+});
+
 export const collections = {
   homepage: homepageCollection,
   about: aboutCollection,
@@ -76,4 +102,5 @@ export const collections = {
   pages: pagesCollection,
   blog: blogCollection,
   authors: authorsCollection,
+  "case-studies": caseStudiesCollection,
 };

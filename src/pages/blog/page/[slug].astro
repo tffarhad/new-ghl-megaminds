@@ -48,10 +48,11 @@ export async function getStaticPaths() {
 ---
 
 <Base
-  title={postIndex.data.title}
-  meta_title={postIndex.data.meta_title}
+  title={`${postIndex.data.title} — page ${currentPage}`}
+  meta_title={`${postIndex.data.meta_title || postIndex.data.title} — page ${currentPage}`}
   image={postIndex.data.image}
   description={postIndex.data.description}
+  noindex
 >
   <PageHeader title={postIndex.data.title} />
   <section class="section">
