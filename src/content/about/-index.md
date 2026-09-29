@@ -14,12 +14,12 @@ draft: false
   <div class="grid g2" style="gap:44px">
     <div>
       <span class="label">Our story</span>
-      <h2>We got tired of<br>watching good tools sit unused.</h2>
+      <h2>What, why, and<br>who this is for.</h2>
     </div>
     <div>
-      <p class="muted">We spent years inside GoHighLevel accounts. Big ones, small ones, broken ones. We saw the same thing over and over. People pay for the tool, open it, feel lost, and stop.</p>
-      <p class="muted" style="margin-top:16px">It was never about the software. It was about nobody being there to build it and stay. So we started GHL Megaminds to be that person. We build it, we hand it over in plain words, and we stick around every month.</p>
-      <p class="muted" style="margin-top:16px">We keep our offer small on purpose. Three things for business owners. Three things for resellers. When you do six things instead of sixty, you get very good at them.</p>
+      <p class="muted"><b>What.</b> GHL Megaminds is a small team that only does GoHighLevel. We build your account, hand it over in plain words, and keep it running every month. No apps, no ads, no logos, just the one tool done properly.</p>
+      <p class="muted" style="margin-top:16px"><b>Why.</b> We started it because we kept seeing the same thing. People pay for the software, open it, feel lost, and stop. It was never about the tool. It was about nobody being there to build it and stay, so we became that person.</p>
+      <p class="muted" style="margin-top:16px"><b>Who.</b> It is for business owners who want the work done for them, and for resellers who sell GoHighLevel as their own software. If you want one system that actually gets used instead of six tools that do not, this is for you.</p>
     </div>
   </div>
 </div></section>
